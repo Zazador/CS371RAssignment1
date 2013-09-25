@@ -1,0 +1,88 @@
+Script started on Sun 22 Sep 2013 11:23:32 PM CDT
+zach$ dir[1Plsvim InvertedIndex.java [C[C[C[C[C[Cls[Kcd vsr/ls[Kcd ir/[4Plscd Project1/[C[C[C[C[C[Cls[Kcd CS371R[C[C[C[C[C[Cls[Kturnin --submit czaheri CS361-hw4 hw4-zach-zador.txt [C[C[C[C[C[C[30Pvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30@turnin --submit czaheri CS361-hw4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd CS371R[C[C[C[C[C[Cls[Kcd Project1/[C[C[C[C[C[Cls[Kcd ir/[4Plscd vsr/ls[Kvim InvertedIndex.java [C[C[C[C[C[Cls[Kdir[Kdir[1Plsvim InvertedIndex.java [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kjava ir.vsr.InvertedIndex.java[K[K[K[K[K -html /u/mooney/ir-code/corpora/yahoo-science/
+Indexing documents in /u/mooney/ir-code/corpora/yahoo-science
+bio001.html,bio002.html,bio003.html,bio004.html,bio005.html,bio006.html,bio007.html,bio008.html,bio009.html,bio010.html,bio011.html,bio012.html,bio013.html,bio014.html,bio015.html,bio016.html,bio017.html,bio018.html,bio019.html,bio020.html,bio021.html,bio022.html,bio023.html,bio024.html,bio025.html,bio026.html,bio027.html,bio028.html,bio029.html,bio030.html,bio031.html,bio032.html,bio033.html,bio034.html,bio035.html,bio036.html,bio037.html,bio038.html,bio039.html,bio040.html,bio041.html,bio042.html,bio043.html,bio044.html,bio045.html,bio046.html,bio047.html,bio048.html,bio049.html,bio050.html,bio051.html,bio052.html,bio053.html,bio054.html,bio055.html,bio056.html,bio057.html,bio058.html,bio059.html,bio060.html,bio061.html,bio062.html,bio063.html,bio064.html,bio065.html,bio066.html,bio067.html,bio068.html,bio069.html,bio070.html,bio071.html,bio072.html,bio073.html,bio074.html,bio075.html,bio076.html,bio077.html,bio078.html,bio079.html,bio080.html,bio081.html,bio082.html,bio083.html,bio084.html,bio085.html,bio086.html,bio087.html,bio088.html,bio089.html,bio090.html,bio091.html,bio092.html,bio093.html,bio094.html,java.lang.ArrayIndexOutOfBoundsException: 88
+	at javax.swing.text.html.parser.ContentModel.first(ContentModel.java:177)
+	at javax.swing.text.html.parser.ContentModel.first(ContentModel.java:156)
+	at javax.swing.text.html.parser.ContentModelState.advance(ContentModelState.java:191)
+	at javax.swing.text.html.parser.TagStack.advance(TagStack.java:138)
+	at javax.swing.text.html.parser.Parser.legalElementContext(Parser.java:540)
+	at javax.swing.text.html.parser.Parser.legalTagContext(Parser.java:713)
+	at javax.swing.text.html.parser.Parser.parseTag(Parser.java:1941)
+	at javax.swing.text.html.parser.Parser.parseContent(Parser.java:2074)
+	at javax.swing.text.html.parser.Parser.parse(Parser.java:2241)
+	at javax.swing.text.html.parser.DocumentParser.parse(DocumentParser.java:122)
+	at javax.swing.text.html.parser.ParserDelegator.parse(ParserDelegator.java:101)
+	at ir.vsr.HTMLFileParserThread.run(HTMLFileDocument.java:57)
+bio095.html,bio096.html,bio097.html,bio098.html,bio099.html,bio100.html,bio101.html,bio102.html,bio103.html,bio104.html,bio105.html,bio106.html,bio107.html,bio108.html,bio109.html,bio110.html,bio111.html,bio112.html,bio113.html,bio114.html,bio115.html,bio116.html,bio117.html,bio118.html,bio119.html,bio120.html,bio121.html,bio122.html,bio123.html,bio124.html,bio125.html,bio126.html,bio127.html,bio128.html,bio129.html,bio130.html,bio131.html,bio132.html,bio133.html,bio134.html,bio135.html,bio136.html,bio137.html,bio138.html,bio139.html,bio140.html,bio141.html,bio142.html,bio143.html,bio144.html,bio145.html,bio146.html,bio147.html,bio148.html,bio149.html,bio150.html,bio151.html,bio152.html,bio153.html,bio154.html,bio155.html,bio156.html,bio157.html,bio158.html,bio159.html,bio160.html,bio161.html,bio162.html,bio163.html,bio164.html,bio165.html,bio166.html,bio167.html,bio168.html,bio169.html,bio170.html,bio171.html,bio172.html,bio173.html,bio174.html,bio175.html,bio176.html,bio177.html,bio178.html,bio179.html,bio180.html,bio181.html,bio182.html,bio183.html,bio184.html,bio185.html,bio186.html,bio187.html,bio188.html,bio189.html,bio190.html,bio191.html,bio192.html,bio193.html,bio194.html,bio195.html,bio196.html,bio197.html,bio198.html,bio199.html,bio200.html,bio201.html,bio202.html,bio203.html,bio204.html,bio205.html,bio206.html,bio207.html,bio208.html,bio209.html,bio210.html,bio211.html,bio212.html,bio213.html,bio214.html,bio215.html,bio216.html,bio217.html,bio218.html,bio219.html,bio220.html,bio221.html,bio222.html,bio223.html,bio224.html,bio225.html,bio226.html,bio227.html,bio228.html,bio229.html,bio230.html,bio231.html,bio232.html,bio233.html,bio234.html,bio235.html,bio236.html,bio237.html,bio238.html,bio239.html,bio240.html,bio241.html,bio242.html,bio243.html,bio244.html,bio245.html,bio246.html,bio247.html,bio248.html,bio249.html,bio250.html,bio251.html,bio252.html,bio253.html,bio254.html,bio255.html,bio256.html,bio257.html,bio258.html,bio259.html,bio260.html,bio261.html,bio262.html,bio263.html,bio264.html,bio265.html,bio266.html,bio267.html,bio268.html,bio269.html,bio270.html,bio271.html,bio272.html,bio273.html,bio274.html,bio275.html,bio276.html,bio277.html,bio278.html,bio279.html,bio280.html,bio281.html,bio282.html,bio283.html,bio284.html,bio285.html,bio286.html,bio287.html,bio288.html,bio289.html,bio290.html,bio291.html,bio292.html,bio293.html,bio294.html,bio295.html,bio296.html,bio297.html,bio298.html,bio299.html,bio300.html,phys039.html,phys040.html,phys041.html,phys042.html,phys043.html,phys044.html,phys045.html,phys046.html,phys047.html,phys048.html,phys049.html,phys050.html,phys051.html,phys052.html,phys053.html,phys054.html,phys055.html,phys056.html,phys057.html,phys058.html,phys059.html,phys060.html,phys061.html,phys062.html,phys063.html,phys064.html,phys065.html,phys066.html,phys067.html,phys068.html,phys069.html,phys070.html,phys071.html,phys072.html,phys073.html,phys074.html,phys075.html,phys076.html,phys077.html,phys078.html,phys079.html,phys080.html,phys081.html,phys082.html,phys083.html,phys084.html,phys085.html,phys086.html,phys087.html,phys088.html,phys089.html,phys090.html,phys091.html,phys001.html,phys002.html,phys003.html,phys004.html,phys005.html,phys006.html,phys007.html,phys008.html,phys009.html,phys010.html,phys011.html,phys012.html,phys013.html,phys014.html,phys015.html,phys016.html,phys017.html,phys018.html,phys019.html,phys020.html,phys021.html,phys022.html,phys023.html,phys024.html,phys025.html,phys026.html,phys027.html,phys028.html,phys029.html,phys030.html,phys031.html,phys032.html,phys033.html,phys034.html,phys035.html,phys036.html,phys037.html,phys038.html,phys092.html,phys093.html,phys094.html,phys095.html,phys096.html,phys097.html,phys098.html,phys099.html,phys100.html,phys101.html,phys102.html,phys103.html,phys104.html,phys105.html,phys106.html,phys107.html,phys108.html,phys109.html,phys110.html,phys111.html,phys112.html,phys113.html,phys114.html,phys115.html,phys116.html,phys117.html,phys118.html,phys119.html,phys120.html,phys121.html,phys122.html,phys123.html,phys124.html,phys125.html,phys126.html,phys127.html,phys128.html,phys129.html,phys130.html,phys131.html,phys132.html,phys133.html,phys134.html,phys135.html,phys136.html,phys137.html,phys138.html,phys139.html,phys140.html,phys141.html,java.lang.ArrayIndexOutOfBoundsException
+phys142.html,phys143.html,phys144.html,phys145.html,phys146.html,phys147.html,phys148.html,phys149.html,phys150.html,phys151.html,phys152.html,phys153.html,phys154.html,phys155.html,phys156.html,phys157.html,phys158.html,phys159.html,phys160.html,phys161.html,phys162.html,phys163.html,phys164.html,phys165.html,phys166.html,phys167.html,phys168.html,phys169.html,phys170.html,phys171.html,phys172.html,phys173.html,phys174.html,phys175.html,phys176.html,phys177.html,phys178.html,phys179.html,phys180.html,phys181.html,phys182.html,phys183.html,phys184.html,phys185.html,phys186.html,phys187.html,phys188.html,phys189.html,phys190.html,phys191.html,phys192.html,phys193.html,phys194.html,phys195.html,phys196.html,phys197.html,phys198.html,phys199.html,phys200.html,phys201.html,phys202.html,phys203.html,phys204.html,phys205.html,phys206.html,phys207.html,phys208.html,phys209.html,phys210.html,phys211.html,phys212.html,phys213.html,phys214.html,phys215.html,phys216.html,phys217.html,phys218.html,phys219.html,phys220.html,phys221.html,phys222.html,phys223.html,phys224.html,phys225.html,phys226.html,phys227.html,phys228.html,phys229.html,phys230.html,phys231.html,phys232.html,phys233.html,phys234.html,phys235.html,phys236.html,phys237.html,phys238.html,phys239.html,phys240.html,phys241.html,phys242.html,phys243.html,phys244.html,phys245.html,phys246.html,phys247.html,phys248.html,phys249.html,phys250.html,phys251.html,phys252.html,phys253.html,phys254.html,phys255.html,phys256.html,phys257.html,phys258.html,phys259.html,phys260.html,phys261.html,phys262.html,phys263.html,phys264.html,phys265.html,phys266.html,phys267.html,phys268.html,phys269.html,phys270.html,phys271.html,phys272.html,phys273.html,phys274.html,phys275.html,phys276.html,phys277.html,phys278.html,phys279.html,phys280.html,phys281.html,phys282.html,phys283.html,phys284.html,phys285.html,phys286.html,phys287.html,phys288.html,phys289.html,phys290.html,phys291.html,phys292.html,phys293.html,phys294.html,phys295.html,phys296.html,phys297.html,phys298.html,phys299.html,phys300.html,chem001.html,chem002.html,chem003.html,chem004.html,chem005.html,chem006.html,chem007.html,chem008.html,chem009.html,chem010.html,chem011.html,chem012.html,chem013.html,chem014.html,chem015.html,chem016.html,chem017.html,chem018.html,chem019.html,chem020.html,chem021.html,chem022.html,chem023.html,chem024.html,chem025.html,chem026.html,chem027.html,chem028.html,chem029.html,chem030.html,chem031.html,chem032.html,chem033.html,chem034.html,chem035.html,chem036.html,chem037.html,chem038.html,chem039.html,chem040.html,chem041.html,chem042.html,chem043.html,chem044.html,chem045.html,chem046.html,chem047.html,chem048.html,chem049.html,chem050.html,chem051.html,chem052.html,chem053.html,chem054.html,chem055.html,chem056.html,chem057.html,chem058.html,chem059.html,chem060.html,chem061.html,chem062.html,chem063.html,chem064.html,chem065.html,chem066.html,chem067.html,chem068.html,chem069.html,chem070.html,chem071.html,chem072.html,chem073.html,chem074.html,chem075.html,chem076.html,chem077.html,chem078.html,chem079.html,chem080.html,chem081.html,chem082.html,chem083.html,chem084.html,chem085.html,chem086.html,chem087.html,chem088.html,chem089.html,chem090.html,chem091.html,chem092.html,chem093.html,chem094.html,chem095.html,chem096.html,chem097.html,chem098.html,chem099.html,chem100.html,chem101.html,chem102.html,chem103.html,chem104.html,chem105.html,chem106.html,chem107.html,chem108.html,chem109.html,chem110.html,chem111.html,chem112.html,chem113.html,chem114.html,chem115.html,chem116.html,chem117.html,chem118.html,chem119.html,chem120.html,chem121.html,chem122.html,chem123.html,chem124.html,chem125.html,chem126.html,chem127.html,chem128.html,chem129.html,chem130.html,chem131.html,chem132.html,chem133.html,chem134.html,chem135.html,chem136.html,chem137.html,chem138.html,chem139.html,chem140.html,chem141.html,chem142.html,chem143.html,chem144.html,chem145.html,chem146.html,chem147.html,chem148.html,chem149.html,chem150.html,chem151.html,chem152.html,chem153.html,chem154.html,chem155.html,chem156.html,chem157.html,chem158.html,chem159.html,chem160.html,chem161.html,chem162.html,chem163.html,chem164.html,chem165.html,chem166.html,chem167.html,chem168.html,chem169.html,chem170.html,chem171.html,chem172.html,chem173.html,chem174.html,chem175.html,chem176.html,chem177.html,chem178.html,chem179.html,chem180.html,chem181.html,chem182.html,chem183.html,chem184.html,chem185.html,chem186.html,chem187.html,chem188.html,chem189.html,chem190.html,chem191.html,chem192.html,chem193.html,chem194.html,chem195.html,chem196.html,chem197.html,chem198.html,chem199.html,chem200.html,chem201.html,chem202.html,chem203.html,chem204.html,chem205.html,chem206.html,chem207.html,chem208.html,chem209.html,chem210.html,chem211.html,chem212.html,chem213.html,chem214.html,chem215.html,chem216.html,chem217.html,chem218.html,chem219.html,chem220.html,chem221.html,chem222.html,chem223.html,chem224.html,chem225.html,chem226.html,chem227.html,chem228.html,chem229.html,chem230.html,chem231.html,chem232.html,chem233.html,chem234.html,chem235.html,chem236.html,chem237.html,chem238.html,chem239.html,chem240.html,chem241.html,chem242.html,chem243.html,chem244.html,chem245.html,chem246.html,chem247.html,chem248.html,chem249.html,chem250.html,chem251.html,chem252.html,chem253.html,chem254.html,chem255.html,chem256.html,chem257.html,chem258.html,chem259.html,chem260.html,chem261.html,chem262.html,chem263.html,chem264.html,chem265.html,chem266.html,chem267.html,chem268.html,chem269.html,chem270.html,chem271.html,chem272.html,chem273.html,chem274.html,chem275.html,chem276.html,chem277.html,chem278.html,chem279.html,chem280.html,chem281.html,chem282.html,chem283.html,chem284.html,chem285.html,chem286.html,chem287.html,chem288.html,chem289.html,chem290.html,chem291.html,chem292.html,chem293.html,chem294.html,chem295.html,chem296.html,chem297.html,chem298.html,chem299.html,chem300.html,
+Indexed 900 documents with 44410 unique terms.
+Now able to process queries. When done, enter an empty query to exit.
+
+Enter query:  cold fusion
+
+Top 10 matching Documents from most to least relevant:
+
+1.  phys265.html         Score: 0.88717
+2.  phys149.html         Score: 0.51823
+3.  phys251.html         Score: 0.47251
+4.  phys173.html         Score: 0.30364
+5.  phys148.html         Score: 0.2812
+6.  phys288.html         Score: 0.25536
+7.  phys017.html         Score: 0.20545
+8.  phys235.html         Score: 0.1913
+9.  phys117.html         Score: 0.17663
+10. phys194.html         Score: 0.16131
+
+Enter `m' to see more, a number to show the nth document, nothing to exit.
+
+ Enter command:  1
+Showing document 1 in the firefox window.
+
+ Enter command:  2
+Showing document 2 in the firefox window.
+
+ Enter command:  3
+Showing document 3 in the firefox window.
+
+ Enter command:  4
+Showing document 4 in the firefox window.
+
+ Enter command:  5
+Showing document 5 in the firefox window.
+
+ Enter command:  6
+Showing document 6 in the firefox window.
+
+ Enter command:  m
+
+11. phys278.html         Score: 0.10602
+12. phys081.html         Score: 0.09796
+13. phys232.html         Score: 0.07186
+14. chem089.html         Score: 0.04503
+15. phys021.html         Score: 0.04371
+16. phys084.html         Score: 0.04371
+17. phys258.html         Score: 0.04307
+18. chem136.html         Score: 0.03308
+19. phys051.html         Score: 0.03132
+20. bio280.html          Score: 0.02767
+
+ Enter command:  
+
+Enter query:  exit
+
+Top 10 matching Documents from most to least relevant:
+
+1.  phys114.html         Score: 0.02381
+2.  bio289.html          Score: 0.01949
+3.  bio184.html          Score: 0.01454
+4.  phys150.html         Score: 0.01433
+
+Enter `m' to see more, a number to show the nth document, nothing to exit.
+
+ Enter command:  
+
+Enter query:  
+zach$ exit
+
+Script done on Sun 22 Sep 2013 11:25:25 PM CDT
