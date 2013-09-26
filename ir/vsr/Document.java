@@ -1,3 +1,9 @@
+/**
+ * Name: Zach Zador
+ * UTEID: zaz78
+ * CSID: sakz
+ */
+
 package ir.vsr;
 
 import java.io.*;
@@ -170,20 +176,103 @@ public abstract class Document {
    * @see Weight
    */
   public HashMapVector hashMapVector() {
+    HashMapVector vector = new HashMapVector();
+    return hashMapVectorFromVector(vector);
+  }
+
+  /**
+   * Takes in an existing hashmapvector and adds tokens to it, where each
+   * token is a key whose value is the number of times it occurs in the
+   * document as stored in a Weight.
+   */
+  public HashMapVector hashMapVectorFromVector(HashMapVector vector) {
     if (numTokens != 0)
       return null;
-    HashMapVector vector = new HashMapVector();
     // Process each token in the document and add it to the vector
-    String lastToken = nextToken();
-    String token, bigram;
     while (hasMoreTokens()) {
-      token = nextToken();
-      bigram = lastToken + " " + token;
-      vector.increment(bigram);
-      lastToken = token;
+      vector.increment(nextToken());
     }
     return vector;
   }
+
+  /**
+   * Returns a hashmap version of the term-vector (bad of words) for this
+   * document, where each token is a bigram whose value is the number of times
+   * it occurs in the document as stored in a Weight.
+   */
+   public HashMapVector hashMapBigramVector() {
+     HashMapVector bigramVector = new HashMapVector();
+     return hashMapBigramVectorFromVector(bigramVector);
+   }
+
+  /**
+   * Takes in an existing hashmapvector and adds tokens to it, where each token is 
+   * a bigram whose value is the number of times it occurs in the document as stored
+   * in a Weight.
+   */
+  public HashMapVector hashMapBigramVectorFromVector(HashMapVector bigramVector) {
+    if (numTokens != 0)
+      return null;
+    
+    // Process each bigram token in the document and add it to the vector
+    String curTok, bigram;
+    String prevTok = nextToken();
+    while (hasMoreTokens()) {
+      curTok = nextToken();
+      bigram = prevTok + " " + curTok;
+      bigramVector.increment(bigram);
+      prevTok = curTok;
+    }
+    return bigramVector;
+  }
+
+  /**
+   * Takes in an existing ArrayList of one word phrases from
+   * the corpus, and returns a HashMapVector that only contains these.
+   */
+  public HashMapVector hashMapVectorFromArrayList(ArrayList<String> phrases) {
+    if (numTokens != 0)
+      return null;
+
+    HashMapVector vector = new HashMapVector();
+    String curTok;
+    String prevTok = nextToken();
+    while (hasMoreTokens()) {
+      curTok = nextToken();
+      // If the ArrayList contains the token, add it to the HashMapVector
+      if (phrases.contains(curTok))
+        vector.increment(curTok);
+      prevTok = curTok;
+    }
+    return vector;
+  }
+
+  /**
+   * Takes in an existing ArrayList of bigram phrases from the corpus,
+   * and returns a HashMapVector that only contains those bigrams.
+   */
+  public HashMapVector hashMapBigramVectorFromArrayList(ArrayList<String> bigramPhrases) {
+    if (numTokens != 0)
+      return null;
+
+    HashMapVector vector = new HashMapVector();
+    String curTok, bigram;
+    String prevTok = nextToken();
+    while (hasMoreTokens()) {
+      curTok = nextToken();
+      bigram = prevTok + " " + curTok;
+      // If the ArrayList contains the bigram, add it to the HashMapVector
+      if (bigramPhrases.contains(bigram))
+        vector.increment(bigram);
+      // Else, take the first one word token and add that to the HashMapVector
+      // since it is not part of the top common bigrams
+      else
+        vector.increment(prevTok);
+      prevTok = curTok;
+    }
+    return vector;
+  }
+    
 
   /**
    * Compute and print out (one line per term) the term-vector (bag of words)

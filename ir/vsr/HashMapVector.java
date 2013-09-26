@@ -1,3 +1,9 @@
+/**
+ * Name: Zach Zador
+ * UTEID: zaz78
+ * CSID: sakz
+ */
+
 package ir.vsr;
 
 import java.util.*;
@@ -172,7 +178,7 @@ public class HashMapVector {
     for (Map.Entry<String, Weight> entry : entrySet()) {
       // Print the term and its weight, where the value of the map entry is a Weight
       // and then you need to get the value of the Weight as the weight.
-      System.out.println(entry.getKey() + ":" + entry.getValue().getValue());
+      System.out.println(entry.getKey() + ": " + entry.getValue().getValue());
     }
   }
 
@@ -235,6 +241,36 @@ public class HashMapVector {
     return Math.sqrt(sum);
   }
 
+  /**
+   * The following code is based on an algorithm from stackoverflow.com
+   * Professor confirmed on Piazza this would be allowed.
+   */
+  public ArrayList<String> getCommonBigrams(int max) {
+    ArrayList<String> result = new ArrayList<String>();
+    ValueComparator bvc = new ValueComparator(this.hashMap);
+    TreeMap<String, Weight> sortedMap = new TreeMap<String, Weight>(bvc);
+    sortedMap.putAll(this.hashMap);
+    int i = 0;
+
+    for (Map.Entry<String, Weight> temp : sortedMap.entrySet()) {
+      if (i++ >= max)
+        return result;
+      result.add(temp.getKey());
+      System.out.println(temp.getKey() + ": " + temp.getValue().getValue());
+    }
+    return result;
+  }
+
+  class ValueComparator implements Comparator<String> {
+    Map<String, Weight> base;
+    public ValueComparator(Map<String, Weight> base) {
+      this.base = base;
+    }
+
+    public int compare(String a, String b) {
+      return (base.get(a).getValue() < base.get(b).getValue()) ? 1 : -1;
+    }
+  }
 }
 
 
